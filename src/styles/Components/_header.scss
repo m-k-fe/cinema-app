@@ -1,0 +1,41 @@
+.header{
+    h1{
+        font-size: 3rem;
+        text-shadow: 2px 3px 0px $color-1;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    nav{
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        font-size: 1.3rem;
+        ul{
+            list-style: none;
+            display: flex;
+            a{
+                font-size: 14px;
+                font-weight: bold;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: $white;
+                border-radius: 10px;
+                width: 100px;
+                text-align: center;
+                margin-right: 20px;
+                &:visited{
+                    color: $white;
+                }
+                &:hover{
+                    background-color: $black;
+                }
+            }
+        }
+        a.active{
+            background-color: $color-1;
+            &:hover{
+                background-color: $black;
+            }
+        }
+    }
+}

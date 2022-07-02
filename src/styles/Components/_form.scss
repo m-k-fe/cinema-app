@@ -1,0 +1,70 @@
+.form-component {
+  .form-container {
+    text-align: center;
+    form {
+      width: 300px;
+      margin: 30px auto 0;
+      input[type="text"] {
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        border: 0;
+        outline: 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+        width: 220px;
+        text-align: center;
+      }
+      input[type="submit"] {
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        width: 220px;
+        border-radius: 0 0 10px 10px;
+        border: 0;
+        background-color: $color-1;
+        color: $white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10;
+        position: relative;
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+    .btns-sort-container {
+      margin: 8px auto;
+      width: 220px;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+    }
+    #goodToBad {
+      border-radius: 10px 0 0 10px;
+      padding: 5px 10px;
+    }
+    #badToGood {
+      border-radius: 0 10px 10px 0;
+      padding: 5px 10px;
+    }
+    #goodToBad,
+    #badToGood {
+      font-size: 0.8rem;
+      font-weight: bold;
+      background-color: $color-1;
+      width: 110px;
+      transition: 0.3s;
+      position: relative;
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+}
